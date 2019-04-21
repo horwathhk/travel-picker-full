@@ -6,17 +6,17 @@ TravelPicker is a webb-app designed to help people who are researching either in
 <h2>Tech-Stack</h2>
 The tech stack of TravelPicker is the following:
 
-<h6>#Backend</h6>
+<h4>#Backend</h4>
 <li>GraphQL</li>
 <li>ExpressJS</li>
 <li>PostgresQL</li> 
 
-<h6>#Front-End</h6> 
+<h4>#Front-End</h4> 
 <li>ReactJS</li>
 <li>Bootstrap</li>
 <li>MaterialUI</li>
 <li>Fetch</li>
 
-<h2APIs Used</h2>
+<h2>APIs Used</h2>
 https://www.triposo.com
 http://ws.audioscrobbler.com/
