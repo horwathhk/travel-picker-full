@@ -49,7 +49,11 @@ class App extends Component {
               </div>
             </div> */}
               <div className="col-9 col-sm-9 col-md-9">
-                <MainView countryName={countryName} countryId={countryId} />
+                <MainView
+                  countryName={countryName}
+                  countryId={countryId}
+                  isLoaded={true}
+                />
               </div>
             </div>
           </div>

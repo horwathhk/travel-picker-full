@@ -85,12 +85,12 @@ export default class MainView extends Component {
           </div>
         </div>
       );
-    } else if (!isLoaded) {
-      return (
-        <div style={{ color: "white" }} className="text-center">
-          Loading...
-        </div>
-      );
+      // } else if (!isLoaded) {
+      //   return (
+      //     <div style={{ color: "white" }} className="text-center">
+      //       Loading...
+      //     </div>
+      //   );
     } else {
       return (
         <div>

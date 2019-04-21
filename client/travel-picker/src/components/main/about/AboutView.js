@@ -61,7 +61,11 @@ export default class AboutView extends Component {
     if (error) {
       return <div>Error: {error.message}</div>;
     } else if (!isLoaded) {
-      return <div>Loading...</div>;
+      return (
+        <div style={{ color: "white" }} className="text-center">
+          Loading...
+        </div>
+      );
     } else {
       return (
         <div>
