@@ -2,20 +2,21 @@
 
 <h1>Introduction to TravelPicker</h1>
 TravelPicker is a webb-app designed to help people who are researching either international travel or moving to a new country permanently. It allows users to filter countries using different criteria, select a country that fits their criteria, and then explore that country including top cities (which can also be explored), national statistics, local news, top articles about that country, and top music charts. 
-Tech-Stack
+
+<h2>Tech-Stack</h2>
 The tech stack of TravelPicker is the following:
 
-#Backend
-GraphQL
-ExpressJS
-PostgresQL 
+<h6>#Backend</h6>
+<li>GraphQL</li>
+<li>ExpressJS</li>
+<li>PostgresQL</li> 
 
-#Front-End 
-ReactJS
-Bootstrap
-MaterialUI
-Fetch
+<h6>#Front-End</h6> 
+<li>ReactJS</li>
+<li>Bootstrap</li>
+<li>MaterialUI</li>
+<li>Fetch</li>
 
-#APIs Used
+<h2APIs Used</h2>
 https://www.triposo.com
 http://ws.audioscrobbler.com/
