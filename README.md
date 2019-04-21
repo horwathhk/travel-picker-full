@@ -18,5 +18,5 @@ The tech stack of TravelPicker is the following:
 <li>Fetch</li>
 
 <h2>APIs Used</h2>
-https://www.triposo.com
-http://ws.audioscrobbler.com/
+<li>https://www.triposo.com</li>
+<li>http://ws.audioscrobbler.com/</li>
