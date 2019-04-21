@@ -10,6 +10,7 @@ import TopArticlesView from "./toparticles/TopArticlesView";
 import TopMusicView from "./topmusic/TopMusicView";
 import TopCities from "./topcities/TopCities";
 import CityModalView from "./citymodal/CityModalView";
+import Spinner from "../../img/spinner.gif";
 
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
 import CountryEconomicView from "./countryEconomics/CountryEconomicView";
@@ -24,11 +25,17 @@ export default class MainView extends Component {
       modalOpen: null,
       modal: false,
       countryName: null,
-      cityName: ""
+      cityName: "",
+      isLoaded: false
     };
     this.toggle = this.toggle.bind(this);
   }
 
+  componentDidUpdate = prevProps => {
+    if (this.props.isLoaded !== prevProps.isLoaded) {
+      this.setState({ isloaded: this.props.isLoaded });
+    }
+  };
   //this is causing an infinite loop
   getTourismIndex = index => {
     if (index != this.state.tourismIndex) {
@@ -52,7 +59,7 @@ export default class MainView extends Component {
   }
 
   render() {
-    let { modalOpen } = this.state;
+    let { modalOpen, isLoaded } = this.state;
     let modal;
     console.log(this.props);
     if (this.props.countryName === "") {
@@ -78,17 +85,11 @@ export default class MainView extends Component {
           </div>
         </div>
       );
+      // } else if (!isLoaded) {
+      //   return <div>{Spinner}</div>;
     } else {
       return (
         <div>
-          {/* <div
-            className="container"
-            style={{ width: "80%", marginLeft: "20%" }}
-          > */}
-          {/* <div class="header-advance-area">
-              <HeaderTopArea />
-              <Breadcome />
-            </div> */}
           <AboutView countryName={this.props.countryName} />
           <TopCities
             countryName={this.props.countryName}
