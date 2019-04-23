@@ -18,8 +18,9 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-     "client": "npm start --prefix client/travel-picker",
-      "server": "node server.js"
+    "client": "npm start --prefix client/travel-picker",
+    "server": "node server.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client/travel-picker && run-build --prefix client/travel-picker"
   },
   "author": "",
   "license": "ISC"
