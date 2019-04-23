@@ -4,9 +4,31 @@ import Typography from "@material-ui/core/Typography";
 import { graphql, compose } from "react-apollo";
 import InputRange from "react-input-range";
 import USA from "../../../img/usa.JPG";
+import FRANCE from "../../../img/france.jpg";
+import HONGKONG from "../../../img/hong_kong.jpg";
+import SPAIN from "../../../img/spain.jpg";
+import THAILAND from "../../../img/thailand.jpg";
+import VIETNAM from "../../../img/vietnam.jpg";
+import BEJING from "../../../img/bejing.jpg";
+import DUBLIN from "../../../img/dublin.jpg";
+import LONDON from "../../../img/london.jpg";
+import PORTUGAL from "../../../img/portugal.jpg";
+
 import "react-input-range/lib/css/index.css";
 
 import { downloadSpeedIndexQuery } from "../../../queries/queries";
+
+let images = [
+  USA,
+  FRANCE,
+  HONGKONG,
+  SPAIN,
+  THAILAND,
+  VIETNAM,
+  BEJING,
+  LONDON,
+  DUBLIN
+];
 
 class ResultsList extends React.Component {
   constructor(props) {
@@ -49,6 +71,7 @@ class ResultsList extends React.Component {
   render() {
     const { classes, country } = this.props;
     const { value } = this.state;
+    let image = images[Math.floor(Math.random() * images.length)];
     // console.log(this.props.country.name);
 
     return (
@@ -66,7 +89,7 @@ class ResultsList extends React.Component {
             >
               <div class="widget-head-info-box" onClick={() => this.sendData()}>
                 <img
-                  src={USA}
+                  src={image}
                   class=" m-b-md"
                   alt="profile"
                   style={{ height: "100%", width: "100%" }}
